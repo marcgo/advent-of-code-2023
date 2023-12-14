@@ -4,14 +4,14 @@ import (
 	_ "embed"
 )
 
-//go:embed test-1.data
-var Test_1 []byte
-var TestResult_1 = int64(288)
+//go:embed test-2.data
+var Test_2 []byte
+var TestResult_2 = int64(71503)
 
-//go:embed input-1.data
-var Input_1 []byte
+//go:embed input-2.data
+var Input_2 []byte
 
-func Day06_1(dataB []byte) (product int64) {
+func Day06_2(dataB []byte) (product int64) {
 	races := loadRaces(dataB)
 	product = 1
 	for _, race := range races.races {
