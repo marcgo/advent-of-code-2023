@@ -20,7 +20,8 @@ func main() {
 	//run("day 05 2 backwards simple", day05.Day05_2b, day05.Input)
 	run("day 06 1 naive", day06.Day06_1, day06.Input_1)
 	run("day 06 2 naive", day06.Day06_2, day06.Input_2)
-	run("day 07 1", day07.Day07_1, day07.Input_1)
+	run("day 07 1", day07.Day07_1, day07.Input)
+	run("day 07 2", day07.Day07_2, day07.Input)
 }
 
 func run(msg string, f func([]byte) int64, data []byte) {

@@ -7,9 +7,9 @@ import (
 )
 
 func TestDay07_1(t *testing.T) {
-	util.CheckI64(TestResult_1, Day07_1(Test_1), "day 07 1 test", t)
+	util.CheckI64(TestResult_1, Day07_1(Test), "day 07 1 test", t)
 }
 
-//func TestDay07_2(t *testing.T) {
-//	util.CheckI64(TestResult_2, Day07_2(Test_2), "day 07 2 test", t)
-//}
+func TestDay07_2(t *testing.T) {
+	util.CheckI64(TestResult_2, Day07_2(Test), "day 07 2 test", t)
+}

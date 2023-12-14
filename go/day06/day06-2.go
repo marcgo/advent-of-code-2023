@@ -12,10 +12,5 @@ var TestResult_2 = int64(71503)
 var Input_2 []byte
 
 func Day06_2(dataB []byte) (product int64) {
-	races := loadRaces(dataB)
-	product = 1
-	for _, race := range races.races {
-		product *= race.WinningPossibilities()
-	}
-	return product
+	return Day06_1(dataB)
 }
