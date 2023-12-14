@@ -9,6 +9,7 @@ import (
 	"AdventOfCode2023/day05"
 	"AdventOfCode2023/day06"
 	"AdventOfCode2023/day07"
+	"AdventOfCode2023/day13"
 )
 
 func main() {
@@ -22,6 +23,7 @@ func main() {
 	run("day 06 2 naive", day06.Day06_2, day06.Input_2)
 	run("day 07 1", day07.Day07_1, day07.Input)
 	run("day 07 2", day07.Day07_2, day07.Input)
+	run("day 13 1", day13.Day13_1, day13.Input)
 }
 
 func run(msg string, f func([]byte) int64, data []byte) {
