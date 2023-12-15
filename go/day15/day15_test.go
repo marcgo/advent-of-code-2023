@@ -10,7 +10,7 @@ import (
 //go:embed test.data
 var Test []byte
 var TestResult_1 = int64(1320)
-var TestResult_2 = int64(64)
+var TestResult_2 = int64(145)
 
 func TestPart1(t *testing.T) {
 	util.CheckI64(TestResult_1, Part1(Test), "day 15 1 test", t)

@@ -29,6 +29,7 @@ func main() {
 	run("day 14 1", day14.Part1, day14.Input)
 	run("day 14 2", day14.Part2, day14.Input)
 	run("day 15 1", day15.Part1, day15.Input)
+	run("day 15 2", day15.Part2, day15.Input)
 }
 
 func run(msg string, f func([]byte) int64, data []byte) {

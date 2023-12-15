@@ -15,9 +15,6 @@ type (
 		steps []string
 		//h     hasherT
 	}
-	hasherT struct {
-		c int64
-	}
 )
 
 func loadData(dataB []byte) (steps stepsT) {
@@ -30,17 +27,16 @@ func loadData(dataB []byte) (steps stepsT) {
 
 func (st *stepsT) hash() (sum int64) {
 	for _, s := range st.steps {
-		h := hasherT{}
-		h.hash(s)
-		sum += h.c
+		sum += hash(s)
 	}
 	return sum
 }
 
-func (h *hasherT) hash(s string) {
+func hash(s string) (cv int64) {
 	for _, c := range s {
-		h.c += int64(c)
-		h.c *= 17
-		h.c %= 256
+		cv += int64(c)
+		cv *= 17
+		cv %= 256
 	}
+	return cv
 }
