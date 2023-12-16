@@ -21,6 +21,8 @@ func main() {
 	day02.Day02_1(day02.Input)
 	day02.Day02_2(day02.Input)
 	run("day 03 1", day03.Part1, day03.Input)
+	run("day 03 2", day03.Part2, day03.Input)
+
 	run("day 05 1 naive", day05.Day05_1, day05.Input)
 	//run("day 05 2 backwards simple", day05.Day05_2b, day05.Input)
 	run("day 06 1 naive", day06.Day06_1, day06.Input_1)
