@@ -6,6 +6,7 @@ import (
 
 	"AdventOfCode2023/day01"
 	"AdventOfCode2023/day02"
+	"AdventOfCode2023/day03"
 	"AdventOfCode2023/day05"
 	"AdventOfCode2023/day06"
 	"AdventOfCode2023/day07"
@@ -19,6 +20,7 @@ func main() {
 	day01.Day01_2(day01.Input)
 	day02.Day02_1(day02.Input)
 	day02.Day02_2(day02.Input)
+	run("day 03 1", day03.Part1, day03.Input)
 	run("day 05 1 naive", day05.Day05_1, day05.Input)
 	//run("day 05 2 backwards simple", day05.Day05_2b, day05.Input)
 	run("day 06 1 naive", day06.Day06_1, day06.Input_1)
